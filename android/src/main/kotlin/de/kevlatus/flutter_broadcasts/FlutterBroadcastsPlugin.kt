@@ -34,7 +34,7 @@ class CustomBroadcastReceiver(
         intent?.let {
             val bundle = it.extras
             val dataPairs = bundle?.keySet()?.map { key ->
-                Pair(key, bundle.get(key))
+                Pair(key, bundle.get(key).toString())
             }
             val data = dataPairs?.toMap() ?: mapOf()
             listener(mapOf(
