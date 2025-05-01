@@ -8,7 +8,7 @@ version = '1.0-SNAPSHOT'
 
 android {
     namespace 'de.kevlatus.flutter_broadcasts' // REQUIRED in new Gradle plugin versions
-    compileSdkVersion 34
+    compileSdkVersion 35
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'

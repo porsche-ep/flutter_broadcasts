@@ -31,19 +31,15 @@ if (keystorePropertiesFile.exists()) {
 android {
     namespace "de.kevlatus.flutter_broadcasts_example"
 
-    compileSdkVersion 34
+    compileSdkVersion 35
 
-    ndkVersion "26.3.11579264"
-
-    lintOptions {
-        disable 'InvalidPackage'
-    }
+    ndkVersion "27.0.12077973"
 
     defaultConfig {
         applicationId "de.kevlatus.flutter_broadcasts_example"
 
         minSdkVersion 24
-        targetSdkVersion 34
+        targetSdkVersion 35
 
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -86,6 +82,10 @@ android {
         production {
             dimension "app"
         }
+    }
+
+    lint {
+        disable 'InvalidPackage'
     }
 }
 
